@@ -11,100 +11,110 @@
 	<title>Currículum Vitae</title>
 </head>
 <body>
-	<header>
-		<p class="descarga">Descarga</p>
-		<p class="archivos">
-			<a href="doc/Curriculum.pdf" download>PDF</a>
-			<a href="img/Curriculum.png" download>PNG</a>
-		</p>
-	</header>
-	<section class="foto">
-		<img src="img/foto.png" alt="Miguel Ángel" title="Miguel Ángel" class="foto__img">
-	</section>
-	<section class="datos">
-		<p class="datos__titulo">Correo</p>
-		<p class="datos__info">Tugztol@gmail.com</p>
-		<p class="datos__titulo">Teléfono</p>
-		<p class="datos__info">55 6257 9620</p>
-		<p class="datos__titulo">Dirección</p>
-		<p class="datos__info">Nezahualcóyotl, Estado de México</p>
-	</section>
-	<section class="herramientas">
-		<h4 class="herramientas__titulo">Herramientas Informáticas</h4>
-		<p class="herramientas__info">HTML</p>
-		<p class="herramientas__info">CSS</p>
-		<p class="herramientas__info">JavaScript</p>
-		<p class="herramientas__info">Git</p>
-		<p class="herramientas__info">Figma</p>
-		<p class="herramientas__info">Photoshop</p>
-		<p class="herramientas__info">Windows</p>
-		<p class="herramientas__info">Linux</p>
-		<p class="herramientas__info">Paquetería Ofimática</p>
-	</section>
-	<section class="habilidades">
-		<h4 class="habilidades__titulo">Habilidades Personales</h4>
-		<p class="habilidades__info">Trabajo en Equipo</p>
-		<p class="habilidades__info">Resolución de Problemas</p>
-		<p class="habilidades__info">Manejo de Conflictos</p>
-		<p class="habilidades__info">Atención al Cliente</p>
-		<p class="habilidades__info">Administración de Oficina</p>
-		<p class="habilidades__info">Organización de Archivos</p>
-	</section>
-	<section class="idiomas">
-		<h4 class="idiomas__titulo">Idiomas</h4>
-		<p class="idiomas__info">Inglés</p>
-		<p class="idiomas__subinfo">Básico</p>
-	</section>
-	<section class="presentacion">
-		<h1 class="presentacion__nombre">Miguel Ángel</h1>
-		<h2 class="presentacion__profesion">Desarrollador Web</h2>
-		<p class="presentacion__objetivo">Empezar una carrera laboran dentro del área del desarrollo web. Ampliar mis conocimientos en el campo de la informática y la tecnología. Conseguir una estabilidad económica que me facilite superarme como persona.</p>
-	</section>
-	<section class="experiencia">
-		<h2 class="experiencia__titulo">Experiencia</h2>
-		<div class="trabajo">
-			<h2 class="trabajo__titulo">Desarrollador Web (Front End)</h2>
-			<p class="trabajo__ubicacion">Independiente</p>
-			<p class="trabajo__duracion">Septiembre 2021 - Actualmente</p>
-			<p class="trabajo__habilidades">· Cumplimiento de mis objetivos a corto y largo plazo consistentemente.<br>
-				· Atención al cliente telefónicamente, como por correo electrónico y cara a cara.<br>
-				· Presentación de ideas para mejorar el desempeño y la eficiencia.</p>
-		</div>
-		<div class="trabajo">
-			<h2 class="trabajo__titulo">Mantenimiento Preventivo y Correctivo</h2>
-			<p class="trabajo__ubicacion">Independiente</p>
-			<p class="trabajo__duracion">Diciembre 2011 - Actualmente</p>
-			<p class="trabajo__habilidades">· Cumplimiento de mis objetivos a corto y largo plazo consistentemente.<br>
-				· Gestión empática y serena de las quejas de los usuarios.<br>
-				· Atención al cliente telefónicamente, como por correo electrónico y cara a cara.<br>
-				· Presentación de ideas para mejorar el desempeño y la eficiencia.<br>
-				· Colaboración con el cuadro directivo para identificar problemas en el flujo y proponer soluciones.</p>
-		</div>
-		<div class="trabajo">
-			<h2 class="trabajo__titulo">Obrero</h2>
-			<p class="trabajo__ubicacion">Taller zona Local</p>
-			<p class="trabajo__duracion">Mayo 2015 - Diciembre 2019</p>
-			<p class="trabajo__habilidades">· Cumplimiento de mis objetivos a corto y largo plazo consistentemente.<br>
-				· Participación proactiva en reuniones destinadas a crear nuevas prácticas.<br>
-				· Formación y supervisión de las nuevas incorporaciones a la plantilla.<br>
-				· Gestión en caja de grandes cantidades de dinero de forma rigurosa.<br>
-				· Presentación de ideas para mejorar el desempeño y la eficiencia.<br>
-				· Colaboración con el cuadro directivo para identificar problemas en el flujo y proponer soluciones.<br>
-				· Supervisión y delegación de tareas en un equipo de 6 personas.</p>
-		</div>
-	</section>
-	<section class="educacion">
-		<h2 class="educacion__titulo">Educación</h2>
-		<div class="escuela">
-			<h2 class="escuela__carrera">Técnico en Informática Administrativa</h2>
-			<p class="escuela__plantel"><span class="escuela__plantel--700">Universidad Insurgentes</span> Plantel Ciudad Azteca</p>
-			<p class="escuela__fecha">2012-2014</p>
-		</div>
-		<div class="escuela">
-			<h2 class="escuela__carrera">Técnico en Mantenimiento de Computadoras</h2>
-			<p class="escuela__plantel"><span class="escuela__plantel--700">Centro de Educación Mexicano para el Crecimiento</span> Plantel zona Centro</p>
-			<p class="escuela__fecha">2010-2011</p>
-		</div>
-	</section>
+	<div class="container">
+		<header>
+			<p class="descarga">Descarga</p>
+			<p class="archivos">
+				<a href="doc/Curriculum.pdf" download class="archivos__link">PDF</a>
+				<a href="img/Curriculum.png" download class="archivos__link">PNG</a>
+			</p>
+		</header>
+		<section class="foto">
+			<img src="img/foto.png" alt="Miguel Ángel" title="Miguel Ángel" class="foto__img">
+		</section>
+		<section class="datos">
+			<div class="datos__borde">
+				<p class="datos__titulo">Correo</p>
+				<p class="datos__info">Tugztol@gmail.com</p>
+				<p class="datos__titulo">Teléfono</p>
+				<p class="datos__info">55 6257 9620</p>
+				<p class="datos__titulo">Dirección</p>
+				<p class="datos__info">Nezahualcóyotl, Estado de México</p>
+			</div>
+		</section>
+		<section class="herramientas">
+			<div class="herramientas__borde">
+				<h4 class="herramientas__titulo">Herramientas Informáticas</h4>
+				<p class="herramientas__info">HTML</p>
+				<p class="herramientas__info">CSS</p>
+				<p class="herramientas__info">JavaScript</p>
+				<p class="herramientas__info">Git</p>
+				<p class="herramientas__info">Figma</p>
+				<p class="herramientas__info">Photoshop</p>
+				<p class="herramientas__info">Windows</p>
+				<p class="herramientas__info">Linux</p>
+				<p class="herramientas__info">Paquetería Ofimática</p>
+			</div>
+		</section>
+		<section class="habilidades">
+			<div class="habilidades__borde">
+				<h4 class="habilidades__titulo">Habilidades Personales</h4>
+				<p class="habilidades__info">Trabajo en Equipo</p>
+				<p class="habilidades__info">Resolución de Problemas</p>
+				<p class="habilidades__info">Manejo de Conflictos</p>
+				<p class="habilidades__info">Atención al Cliente</p>
+				<p class="habilidades__info">Administración de Oficina</p>
+				<p class="habilidades__info">Organización de Archivos</p>
+			</div>
+		</section>
+		<section class="idiomas">
+			<div class="idiomas__borde">
+				<h4 class="idiomas__titulo">Idiomas</h4>
+				<p class="idiomas__info">Inglés</p>
+				<p class="idiomas__subinfo">Básico</p>
+			</div>
+		</section>
+		<section class="presentacion">
+			<h1 class="presentacion__nombre">Miguel Ángel</h1>
+			<h2 class="presentacion__profesion">Desarrollador Web</h2>
+			<p class="presentacion__objetivo">Empezar una carrera laboran dentro del área del desarrollo web. Ampliar mis conocimientos en el campo de la informática y la tecnología. Conseguir una estabilidad económica que me facilite superarme como persona.</p>
+		</section>
+		<section class="experiencia">
+			<h2 class="experiencia__titulo">Experiencia</h2>
+			<div class="trabajo">
+				<h2 class="trabajo__titulo">Desarrollador Web (Front End)</h2>
+				<p class="trabajo__ubicacion">Independiente</p>
+				<p class="trabajo__duracion">Septiembre 2021 - Actualmente</p>
+				<p class="trabajo__habilidades">· Cumplimiento de mis objetivos a corto y largo plazo consistentemente.<br>
+					· Atención al cliente telefónicamente, como por correo electrónico y cara a cara.<br>
+					· Presentación de ideas para mejorar el desempeño y la eficiencia.</p>
+			</div>
+			<div class="trabajo">
+				<h2 class="trabajo__titulo">Mantenimiento Preventivo y Correctivo</h2>
+				<p class="trabajo__ubicacion">Independiente</p>
+				<p class="trabajo__duracion">Diciembre 2011 - Actualmente</p>
+				<p class="trabajo__habilidades">· Cumplimiento de mis objetivos a corto y largo plazo consistentemente.<br>
+					· Gestión empática y serena de las quejas de los usuarios.<br>
+					· Atención al cliente telefónicamente, como por correo electrónico y cara a cara.<br>
+					· Presentación de ideas para mejorar el desempeño y la eficiencia.<br>
+					· Colaboración con el cuadro directivo para identificar problemas en el flujo y proponer soluciones.</p>
+			</div>
+			<div class="trabajo">
+				<h2 class="trabajo__titulo">Obrero</h2>
+				<p class="trabajo__ubicacion">Taller zona Local</p>
+				<p class="trabajo__duracion">Mayo 2015 - Diciembre 2019</p>
+				<p class="trabajo__habilidades">· Cumplimiento de mis objetivos a corto y largo plazo consistentemente.<br>
+					· Participación proactiva en reuniones destinadas a crear nuevas prácticas.<br>
+					· Formación y supervisión de las nuevas incorporaciones a la plantilla.<br>
+					· Gestión en caja de grandes cantidades de dinero de forma rigurosa.<br>
+					· Presentación de ideas para mejorar el desempeño y la eficiencia.<br>
+					· Colaboración con el cuadro directivo para identificar problemas en el flujo y proponer soluciones.<br>
+					· Supervisión y delegación de tareas en un equipo de 6 personas.</p>
+			</div>
+		</section>
+		<section class="educacion">
+			<h2 class="educacion__titulo">Educación</h2>
+			<div class="escuela">
+				<h2 class="escuela__carrera">Técnico en Informática Administrativa</h2>
+				<p class="escuela__plantel"><span class="escuela__plantel--700">Universidad Insurgentes</span> Plantel Ciudad Azteca</p>
+				<p class="escuela__fecha">2012-2014</p>
+			</div>
+			<div class="escuela">
+				<h2 class="escuela__carrera">Técnico en Mantenimiento de Computadoras</h2>
+				<p class="escuela__plantel"><span class="escuela__plantel--700">Centro de Educación Mexicano para el Crecimiento</span> Plantel zona Centro</p>
+				<p class="escuela__fecha">2010-2011</p>
+			</div>
+		</section>
+	</div>
 </body>
 </html>
