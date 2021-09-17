@@ -1,0 +1,151 @@
+.container {
+	width: 95%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	// grid-template-rows: repeat(8, auto);
+	grid-template-areas:
+		'header header header header header header header header header header'
+		'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+		'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+		'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+		'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+		'habilidades habilidades habilidades educacion educacion educacion educacion educacion educacion educacion'
+		'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion';
+}
+header {
+	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 25px;
+}
+.archivos {
+	&__link {
+		margin-left: 25px;
+	}
+}
+.foto {
+	grid-area: foto;
+	padding: 50px;
+	&__img {
+		width: 100%;
+		vertical-align: top;
+	}
+}
+.datos {
+	grid-area: datos;
+	padding: 0px 25px;
+	&__borde {
+		padding-bottom: 25px;
+	}
+	&__titulo {
+		margin-bottom: 10px;
+	}
+	&__info {
+		margin-bottom: 25px;
+	}
+}
+.herramientas {
+	grid-area: herramientas;
+	padding: 25px 25px 0px 25px;
+	&__borde {
+		padding-bottom: 25px;
+	}
+	&__titulo,
+	&__info {
+		margin-bottom: 10px;
+	}
+	&__info,
+	&__ultimo {
+		padding-left: 25px;
+	}
+}
+.habilidades {
+	grid-area: habilidades;
+	padding: 25px 25px 0px 25px;
+	&__borde {
+		padding-bottom: 25px;
+	}
+	&__titulo,
+	&__info {
+		margin-bottom: 10px;
+	}
+	&__info,
+	&__ultimo {
+		padding-left: 25px;
+	}
+}
+.idiomas {
+	grid-area: idiomas;
+	padding: 25px;
+	&__titulo,
+	&__info {
+		margin-bottom: 10px;
+	}
+	&__info {
+		padding-left: 25px;
+	}
+	&__subinfo {
+		padding-left: 50px;
+	}
+}
+.presentacion {
+	grid-area: presentacion;
+	padding: 25px;
+	&__nombre,
+	&__profesion {
+		margin: 0px;
+	}
+	&__profesion {
+		margin-bottom: 25px;
+	}
+}
+.experiencia {
+	grid-area: experiencia;
+	padding: 25px;
+	&__titulo {
+		margin-bottom: 25px;
+	}
+}
+.trabajo {
+	padding-left: 25px;
+	&__titulo,
+	&__ubicacion {
+		margin: 0px;
+	}
+	&__duracion {
+		margin-bottom: 10px;
+	}
+	&__habilidades,
+	&__ultimo {
+		padding-left: 25px;
+	}
+	&__habilidades {
+		margin-bottom: 25px;
+	}
+}
+.educacion {
+	grid-area: educacion;
+	padding: 25px;
+	&__titulo {
+		margin-bottom: 25px;
+	}
+}
+.escuela {
+	margin-bottom: 25px;
+	padding-left: 25px;
+	&__carrera,
+	&__plantel,
+	&__fecha {
+		margin: 0px;
+	}
+}

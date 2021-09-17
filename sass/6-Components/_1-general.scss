@@ -1,0 +1,76 @@
+.container {
+	background-color: $negro;
+	box-shadow: 0px 0px 25px 10px rgba(#000, 0.3);
+}
+.archivos {
+	&__link {
+		text-decoration: none;
+		color: $blanco;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.foto,
+.datos,
+.herramientas,
+.habilidades,
+.idiomas {
+	background-color: $verde;
+	color: $blanco;
+}
+.datos,
+.herramientas,
+.habilidades {
+	&__borde {
+		border-bottom: 5px solid $blanco;
+	}
+}
+.datos {
+	&__titulo {
+		font-weight: 700;
+	}
+}
+.presentacion {
+	background-color: $agua;
+	&__nombre {
+		font-size: 3.125rem;
+		font-weight: 400;
+		color: $verde;
+	}
+	&__profesion {
+		font-size: 1.563rem;
+		font-weight: 400;
+	}
+}
+.experiencia {
+	background-color: $blanco;
+	&__titulo {
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+}
+.trabajo {
+	&__titulo {
+		font-size: 1.563rem;
+		font-weight: 400;
+		color: $verde;
+	}
+	&__ubicacion {
+		font-weight: 700;
+	}
+}
+.educacion {
+	background-color: $blanco;
+	&__titulo {
+		font-size: 00.875rem;
+		font-weight: 400;
+	}
+}
+.escuela {
+	&__carrera {
+		font-size: 1.563rem;
+		font-weight: 400;
+		color: $verde;
+	}
+}
