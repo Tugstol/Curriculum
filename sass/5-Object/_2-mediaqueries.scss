@@ -1,1 +1,153 @@
 // @media screen and (max-width: 800px) and (orientation: landscape){}
+@media screen and (max-width: 1050px) {
+	.foto {
+		padding: 40px 40px;
+	}
+}
+@media screen and (max-width: 950px) {
+	.foto {
+		padding: 30px 30px;
+	}
+}
+@media screen and (max-width: 915px) {
+	.container {
+		grid-template-areas:
+			'header header header header header header header header header header'
+			'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+			'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+			'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+			'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion';
+	}
+}
+@media screen and (max-width: 850px) {
+	.container {
+		grid-template-areas:
+			'header header header header header header header header header header'
+			'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+			'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+			'foto foto foto presentacion presentacion presentacion presentacion presentacion presentacion presentacion'
+			'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'foto foto foto experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'datos datos datos experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'herramientas herramientas herramientas experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades experiencia experiencia experiencia experiencia experiencia experiencia experiencia'
+			'habilidades habilidades habilidades educacion educacion educacion educacion educacion educacion educacion'
+			'habilidades habilidades habilidades educacion educacion educacion educacion educacion educacion educacion'
+			'habilidades habilidades habilidades educacion educacion educacion educacion educacion educacion educacion'
+			'habilidades habilidades habilidades educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion'
+			'idiomas idiomas idiomas  educacion educacion educacion educacion educacion educacion educacion';
+	}
+}
+@media screen and (max-width: 800px) {
+	.container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas:
+			'header header header header'
+			'foto foto datos datos'
+			'presentacion presentacion presentacion presentacion'
+			'experiencia experiencia experiencia experiencia'
+			'herramientas herramientas habilidades habilidades'
+			'educacion educacion educacion educacion'
+			'idiomas idiomas idiomas idiomas ';
+		.herramientas,
+		.habilidades {
+			&__borde {
+				border-bottom: none;
+			}
+		}
+	}
+	.foto {
+		padding: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.datos {
+		padding: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 550px) {
+	.trabajo {
+		padding-left: 0px;
+		&__duracion {
+			margin-bottom: 15px;
+		}
+		&__habilidades,
+		&__ultimo {
+			padding-left: 0px;
+		}
+	}
+	.escuela {
+		padding-left: 0px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			'header'
+			'foto'
+			'datos'
+			'presentacion'
+			'experiencia'
+			'herramientas'
+			'habilidades'
+			'educacion'
+			'idiomas';
+		.foto {
+			padding: 50px;
+		}
+		.datos {
+			padding: 25px;
+			display: flex;
+			justify-content: start;
+			&__borde {
+				border-bottom: none;
+			}
+		}
+		.herramientas {
+			&__borde {
+				border-bottom: 5px solid $blanco;
+			}
+		}
+	}
+}
+@media screen and (max-width: 375px) {
+	.container {
+		.foto {
+			padding: 25px;
+		}
+	}
+}
